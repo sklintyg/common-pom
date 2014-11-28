@@ -796,7 +796,6 @@
           <artifactId>buildnumber-maven-plugin</artifactId>
           <version>${buildnumber-maven-plugin.version}</version>
         </plugin>
-
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
@@ -807,13 +806,13 @@
           <artifactId>findbugs-maven-plugin</artifactId>
           <version>${findbugs-maven-plugin.version}</version>
         </plugin>
-
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
           <version>${versions-maven-plugin.version}</version>
         </plugin>
 
+        <!-- Web Service Plugin -->
         <plugin>
           <!-- CXF plugin for generating JAX-WS/JAXB src code from WSDL/XSD -->
           <groupId>org.apache.cxf</groupId>
@@ -824,6 +823,13 @@
           <groupId>org.apache.cxf</groupId>
           <artifactId>cxf-xjc-plugin</artifactId>
           <version>${cxf-xjc-plugin.version}</version>
+        </plugin>
+
+        <!-- ActiveMQ Plugin -->
+        <plugin>
+          <groupId>org.apache.activemq.tooling</groupId>
+          <artifactId>activemq-maven-plugin</artifactId>
+          <version>${activemq.version}</version>
         </plugin>
 
         <!-- Jetty Maven Plugin -->
