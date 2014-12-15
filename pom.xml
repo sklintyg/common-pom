@@ -33,7 +33,7 @@
     <hsqldb.connector.version>1.8.0.7</hsqldb.connector.version>
     <joda.version>2.2</joda.version>
     <jadira.usertype.version>3.1.0.CR2</jadira.usertype.version>
-    <liquibase.version>2.0.5</liquibase.version>
+    <liquibase.version>3.3.1</liquibase.version>
     <mysql.connector.version>5.1.24</mysql.connector.version>
 
     <!-- Groovy -->
@@ -354,6 +354,12 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-core</artifactId>
         <version>${spring.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
