@@ -171,6 +171,12 @@
   <dependencyManagement>
     <dependencies>
 
+      <dependency>
+        <groupId>se.inera.intyg.common</groupId>
+        <artifactId>common-build-tools</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
       <!-- AOP -->
       <dependency>
         <groupId>org.aspectj</groupId>
@@ -1048,7 +1054,6 @@
                 <artifactItem>
                   <groupId>se.inera.intyg.common</groupId>
                   <artifactId>common-build-tools</artifactId>
-                  <version>${project.version}</version>
                 </artifactItem>
               </artifactItems>
               <outputDirectory>${project.build.directory}/build-tools</outputDirectory>
