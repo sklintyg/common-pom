@@ -174,7 +174,7 @@
       <dependency>
         <groupId>se.inera.intyg.common</groupId>
         <artifactId>common-build-tools</artifactId>
-        <version>${project.version}</version>
+        <version>0-SNAPSHOT</version>
       </dependency>
 
       <!-- AOP -->
