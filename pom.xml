@@ -1045,7 +1045,7 @@
         <executions>
           <execution>
             <id>unpack-build-tools</id>
-            <phase>package</phase>
+            <phase>initialize</phase>
             <goals>
               <goal>unpack</goal>
             </goals>
