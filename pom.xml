@@ -96,6 +96,9 @@
     <xml-apis.version>1.4.01</xml-apis.version>
     <json-path.version>1.2.0</json-path.version>
 
+    <!-- Lucene -->
+    <lucene.version>4.10.2</lucene.version>
+
     <!-- Camel -->
     <camel.version>2.13.3</camel.version>
 
@@ -611,6 +614,18 @@
         <groupId>org.apache.activemq</groupId>
         <artifactId>activemq-camel</artifactId>
         <version>${activemq.version}</version>
+      </dependency>
+
+      <!-- Lucene -->
+      <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-core</artifactId>
+        <version>${lucene.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-analyzers-common</artifactId>
+        <version>${lucene.version}</version>
       </dependency>
 
       <!-- Uncategorized libraries -->
