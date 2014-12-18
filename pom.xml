@@ -57,7 +57,7 @@
     <spring.batch.admin.version>1.2.2.RELEASE</spring.batch.admin.version>
     <spring.data.version>1.4.1.RELEASE</spring.data.version>
     <spring.integration.version>2.0.3.RELEASE</spring.integration.version>
-    <spring.security.version>3.1.3.RELEASE</spring.security.version>
+    <spring.security.version>3.2.5.RELEASE</spring.security.version>
     <spring.security.extensions.version>1.0.0.RC2</spring.security.extensions.version>
 
     <!-- Queue management -->
