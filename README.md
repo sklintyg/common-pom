@@ -10,7 +10,7 @@ Intyg Common (POM) byggs med hjälp av Maven enligt följande:
 $ git clone https://github.com/sklintyg/common-pom.git
 
 $ cd common-pom
-$ mvn install
+$ mvn install -Ddependency.unpack.skip=true
 ```
 
 ## Licens
