@@ -78,6 +78,7 @@
     <guava.version>14.0.1</guava.version>
 
     <!-- Web/Webjars -->
+    <jquery.version>1.9.0</jquery.version>
     <angularjs.version>1.2.27</angularjs.version>
     <angular-ui-bootstrap.version>0.11.2</angular-ui-bootstrap.version>
     <bootstrap.version>3.1.1</bootstrap.version>
