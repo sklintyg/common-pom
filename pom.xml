@@ -43,7 +43,7 @@
     <mysql.connector.version>5.1.24</mysql.connector.version>
 
     <!-- Groovy -->
-    <groovy.version>2.3.4</groovy.version>
+    <groovy.version>2.3.7</groovy.version>
     <groovy.httpBuilder.version>0.6</groovy.httpBuilder.version>
 
     <!-- JSON -->
@@ -120,7 +120,7 @@
     <findbugs-maven-plugin.version>2.5.2</findbugs-maven-plugin.version>
     <fitnesse-launcher-maven-plugin.version>1.4.1</fitnesse-launcher-maven-plugin.version>
     <frontend-maven-plugin.version>0.0.16</frontend-maven-plugin.version>
-    <groovy-eclipse-batch.version>2.3.4-01</groovy-eclipse-batch.version>
+    <groovy-eclipse-batch.version>2.3.7-01</groovy-eclipse-batch.version>
     <groovy-eclipse-compiler.version>2.9.0-01</groovy-eclipse-compiler.version>
     <jacoco-maven-plugin.version>0.6.2.201302030002</jacoco-maven-plugin.version>
     <karma-plugin-version>1.6</karma-plugin-version>
@@ -173,6 +173,19 @@
   <scm>
     <connection>scm:git:git@github.com:sklintyg/common-pom.git</connection>
   </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>cloudbees-private-release-repository</id>
+      <name>Callista Software Release Respository</name>
+      <url>dav:https://repository-callistasoftware.forge.cloudbees.com/release</url>
+    </repository>
+    <snapshotRepository>
+      <id>cloudbees-private-snapshot-repository</id>
+      <name>Callista Software Snapshot Respository</name>
+      <url>dav:https://repository-callistasoftware.forge.cloudbees.com/snapshot</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <dependencyManagement>
     <dependencies>
