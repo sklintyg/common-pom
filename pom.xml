@@ -43,8 +43,8 @@
     <mysql.connector.version>5.1.24</mysql.connector.version>
 
     <!-- Groovy -->
-    <groovy.version>2.3.7</groovy.version>
-    <groovy.httpBuilder.version>0.6</groovy.httpBuilder.version>
+    <groovy.version>2.4.3</groovy.version>
+    <groovy.httpBuilder.version>0.7.1</groovy.httpBuilder.version>
 
     <!-- JSON -->
     <jsonassert.version>1.2.0</jsonassert.version>
@@ -120,8 +120,8 @@
     <findbugs-maven-plugin.version>2.5.2</findbugs-maven-plugin.version>
     <fitnesse-launcher-maven-plugin.version>1.4.1</fitnesse-launcher-maven-plugin.version>
     <frontend-maven-plugin.version>0.0.16</frontend-maven-plugin.version>
-    <groovy-eclipse-batch.version>2.3.7-01</groovy-eclipse-batch.version>
-    <groovy-eclipse-compiler.version>2.9.0-01</groovy-eclipse-compiler.version>
+    <groovy-eclipse-batch.version>2.4.3-01</groovy-eclipse-batch.version>
+    <groovy-eclipse-compiler.version>2.9.1-01</groovy-eclipse-compiler.version>
     <jacoco-maven-plugin.version>0.6.2.201302030002</jacoco-maven-plugin.version>
     <karma-plugin-version>1.6</karma-plugin-version>
     <m2e-lifecycle-mapping.version>1.0.0</m2e-lifecycle-mapping.version>
