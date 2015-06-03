@@ -106,6 +106,9 @@
     <!-- Camel -->
     <camel.version>2.13.3</camel.version>
 
+    <!-- ehcache -->
+    <ehcache.version>2.10.0</ehcache.version>
+
     <!-- Uncategorized libraries -->
     <javax-mail.version>1.4</javax-mail.version>
     <jetty.plugin.version>9.1.1.v20140108</jetty.plugin.version>
@@ -648,6 +651,13 @@
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-analyzers-common</artifactId>
         <version>${lucene.version}</version>
+      </dependency>
+
+      <!-- ehcache -->
+      <dependency>
+        <groupId>net.sf.ehcache</groupId>
+        <artifactId>ehcache</artifactId>
+        <version>${ehcache.version}</version>
       </dependency>
 
       <!-- Uncategorized libraries -->
