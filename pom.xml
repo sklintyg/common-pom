@@ -64,7 +64,7 @@
 
     <!-- Queue management -->
     <activemq.version>5.9.1</activemq.version>
-    <javax-jms-api.version>1.1</javax-jms-api.version>
+    <javax-jms-api.version>1.1-rev-1</javax-jms-api.version>
 
     <!-- Security -->
     <esapi.version>2.0.1</esapi.version>
@@ -180,14 +180,14 @@
 
   <distributionManagement>
     <repository>
-      <id>cloudbees-private-release-repository</id>
-      <name>Callista Software Release Respository</name>
-      <url>dav:https://repository-callistasoftware.forge.cloudbees.com/release</url>
+      <id>inera-release-repository</id>
+      <name>inera-release-repository</name>
+      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/releases/</url>
     </repository>
     <snapshotRepository>
-      <id>cloudbees-private-snapshot-repository</id>
-      <name>Callista Software Snapshot Respository</name>
-      <url>dav:https://repository-callistasoftware.forge.cloudbees.com/snapshot</url>
+      <id>inera-snapshot-repository</id>
+      <name>inera-snapshot-repository</name>
+      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 
@@ -1122,7 +1122,7 @@
   <pluginRepositories>
     <pluginRepository>
       <id>thirdparty-plugin</id>
-      <url>https://repository-callistasoftware.forge.cloudbees.com/3rdparty</url>
+      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/thirdparty/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -1143,8 +1143,8 @@
 
   <repositories>
     <repository>
-      <id>callista-release</id>
-      <url>http://repository-callistasoftware.forge.cloudbees.com/release/</url>
+      <id>inera-release</id>
+      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/releases/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -1153,8 +1153,8 @@
       </snapshots>
     </repository>
     <repository>
-      <id>callista-snapshot</id>
-      <url>http://repository-callistasoftware.forge.cloudbees.com/snapshot/</url>
+      <id>inera-snapshot</id>
+      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/snapshots/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -1164,7 +1164,7 @@
     </repository>
     <repository>
       <id>thirdparty</id>
-      <url>http://repository-callistasoftware.forge.cloudbees.com/3rdparty</url>
+      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/thirdparty/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
