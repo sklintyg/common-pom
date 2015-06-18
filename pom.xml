@@ -182,12 +182,12 @@
     <repository>
       <id>inera-release-repository</id>
       <name>inera-release-repository</name>
-      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/releases/</url>
+      <url>https://build-inera.nordicmedtest.se/nexus/content/repositories/releases/</url>
     </repository>
     <snapshotRepository>
       <id>inera-snapshot-repository</id>
       <name>inera-snapshot-repository</name>
-      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/snapshots/</url>
+      <url>https://build-inera.nordicmedtest.se/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 
@@ -1122,7 +1122,7 @@
   <pluginRepositories>
     <pluginRepository>
       <id>thirdparty-plugin</id>
-      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/thirdparty/</url>
+      <url>https://build-inera.nordicmedtest.se/nexus/content/repositories/thirdparty/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -1144,7 +1144,7 @@
   <repositories>
     <repository>
       <id>inera-release</id>
-      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/releases/</url>
+      <url>https://build-inera.nordicmedtest.se/nexus/content/repositories/releases/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -1154,7 +1154,7 @@
     </repository>
     <repository>
       <id>inera-snapshot</id>
-      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/snapshots/</url>
+      <url>https://build-inera.nordicmedtest.se/nexus/content/repositories/snapshots/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -1164,7 +1164,7 @@
     </repository>
     <repository>
       <id>thirdparty</id>
-      <url>https://jenkins.inera.nordicmedtest.se/nexus/content/repositories/thirdparty/</url>
+      <url>https://build-inera.nordicmedtest.se/nexus/content/repositories/thirdparty/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
