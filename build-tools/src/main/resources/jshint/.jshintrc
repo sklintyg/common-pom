@@ -33,10 +33,10 @@
         "expect": false,
         "it": false,
         "jasmine": false,
-        "angular": false,
+        "angular": true,
         "moment": false,
-        "$": false,
-        "MODULE_CONFIG": false,
+        "$": true,
+        "MODULE_CONFIG": true
         "element": false,
         "by": false,
         "module" :false,
