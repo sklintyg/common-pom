@@ -36,7 +36,7 @@
         "angular": true,
         "moment": false,
         "$": true,
-        "MODULE_CONFIG": true
+        "MODULE_CONFIG": true,
         "element": false,
         "by": false,
         "module" :false,
