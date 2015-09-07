@@ -6,7 +6,7 @@
 
   <groupId>se.inera.intyg.common</groupId>
   <artifactId>common-pom</artifactId>
-  <version>0-SNAPSHOT</version>
+  <version>1.0.9.1</version>
   <packaging>pom</packaging>
 
   <name>Intyg Common (POM)</name>
@@ -63,7 +63,7 @@
     <spring.security.extensions.version>1.0.1.RELEASE</spring.security.extensions.version>
 
     <!-- Queue management -->
-    <activemq.version>5.8.0</activemq.version>
+    <activemq.version>5.9.1</activemq.version>
     <javax-jms-api.version>1.1</javax-jms-api.version>
 
     <!-- Security -->
