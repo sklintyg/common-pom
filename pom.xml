@@ -63,7 +63,7 @@
     <spring.security.extensions.version>1.0.1.RELEASE</spring.security.extensions.version>
 
     <!-- Queue management -->
-    <activemq.version>5.8.0</activemq.version>
+    <activemq.version>5.9.1</activemq.version>
     <javax-jms-api.version>1.1-rev-1</javax-jms-api.version>
 
     <!-- Security -->
