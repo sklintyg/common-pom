@@ -1072,7 +1072,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
-          <argLine>-Dcatalina.base=${project.build.directory}/catalina.base</argLine>
+          <argLine>-Dcatalina.base=${project.build.directory}/catalina.base ${argLine}</argLine>
           <systemProperties>
             <property>
               <name>java.awt.headless</name>
