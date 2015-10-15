@@ -15,31 +15,39 @@
     "nonew": true,
     "nonbsp": true,
     "quotmark": "single",
+    "unused": "vars",
     "undef": true,
-    "unused": true,
     "strict": true,
     "trailing": true,
     "maxstatements": 150,
     "maxcomplexity": 10,
-    "maxlen": 150,
+    "maxlen": 200,
     "maxerr": 10000,
-    "browser": false,
-    "devel": false,
+    "browser": true,
+    "devel": true,
+    "jasmine": true,
+	"jquery": true,
+	"node": true,
+	"nonstandard": true,
+	"phantom": true,
 
     "globals": {
-        "afterEach": false,
-        "beforeEach": false,
-        "describe": false,
-        "expect": false,
-        "it": false,
-        "jasmine": false,
-        "angular": true,
+	
+		// other libs
+        "angular": false,
         "moment": false,
-        "$": true,
-        "MODULE_CONFIG": true,
+		"require": false,
+		
+		// missing jasmine globals from jshint 'jasmine' configuration
+		"xdescribe": false,
+		
+		// actual custom globals
+        "MODULE_CONFIG": false,
         "element": false,
+		"inject": false,
         "by": false,
-        "module" :false,
-        "browser" : false
-    }
+        "runs": false,
+        "iid_Invoke": false,
+		"__dirname": false
+	}
 }
