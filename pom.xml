@@ -1120,6 +1120,9 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <configuration>
           <configLocation>${project.build.directory}/build-tools/checkstyle/checkstyle.xml</configLocation>
+          <logViolationsToConsole>true</logViolationsToConsole>
+          <failOnViolation>true</failOnViolation>
+          <violationSeverity>info</violationSeverity>
         </configuration>
       </plugin>
     </plugins>
