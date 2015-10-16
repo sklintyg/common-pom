@@ -20,7 +20,7 @@
     "strict": true,
     "trailing": true,
     "maxstatements": 150,
-    "maxcomplexity": 10,
+    "maxcomplexity": 20,
     "maxlen": 200,
     "maxerr": 10000,
     "browser": true,
@@ -48,6 +48,7 @@
         "by": false,
         "runs": false,
         "iid_Invoke": false,
-		"__dirname": false
+		"__dirname": false,
+		"Class": false
 	}
 }
