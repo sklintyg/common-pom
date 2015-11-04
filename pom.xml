@@ -12,6 +12,8 @@
   <name>Intyg Common (POM)</name>
 
   <properties>
+    <dependency.unpack.skip>false</dependency.unpack.skip>
+
     <system.mode>dev</system.mode>
     <compiler.target.version>1.7</compiler.target.version>
     <compiler.source.version>1.7</compiler.source.version>
