@@ -6,7 +6,7 @@
 
   <groupId>se.inera.intyg.common</groupId>
   <artifactId>common-pom</artifactId>
-  <version>0-SNAPSHOT</version>
+  <version>1.0.16</version>
   <packaging>pom</packaging>
 
   <name>Intyg Common (POM)</name>
@@ -50,12 +50,9 @@
     <logback.version>1.0.11</logback.version>
 
     <!-- Spring Framework -->
-    <spring.version>3.2.8.RELEASE</spring.version>
-    <spring.batch.version>2.1.7.RELEASE</spring.batch.version>
-    <spring.batch.admin.version>1.2.2.RELEASE</spring.batch.admin.version>
-    <spring.data.version>1.4.1.RELEASE</spring.data.version>
-    <spring.integration.version>2.0.3.RELEASE</spring.integration.version>
-    <spring.security.version>3.2.5.RELEASE</spring.security.version>
+    <spring.version>4.2.2.RELEASE</spring.version>
+    <spring.data.version>1.9.0.RELEASE</spring.data.version>
+    <spring.security.version>4.0.3.RELEASE</spring.security.version>
     <spring.security.extensions.version>1.0.1.RELEASE</spring.security.extensions.version>
 
     <!-- Queue management -->
@@ -88,7 +85,7 @@
     <servlet-api.version>2.5</servlet-api.version>
 
     <!-- Web Services -->
-    <cxf.version>2.7.13</cxf.version>
+    <cxf.version>3.1.3</cxf.version>
 
     <!-- XML -->
     <jaxb.commons.version>0.6.4</jaxb.commons.version>
@@ -101,7 +98,7 @@
     <lucene.version>4.10.2</lucene.version>
 
     <!-- Camel -->
-    <camel.version>2.13.3</camel.version>
+    <camel.version>2.16.0</camel.version>
 
     <!-- ehcache -->
     <ehcache.version>2.10.0</ehcache.version>
@@ -115,8 +112,8 @@
     <!-- Plugins and plugin dependencies -->
     <buildnumber-maven-plugin.version>1.2</buildnumber-maven-plugin.version>
     <cobertura-maven-plugin.version>2.5.2</cobertura-maven-plugin.version>
-    <cxf-codegen-plugin.version>2.7.5</cxf-codegen-plugin.version>
-    <cxf-xjc-plugin.version>2.6.0</cxf-xjc-plugin.version>
+    <cxf-codegen-plugin.version>3.1.3</cxf-codegen-plugin.version>
+    <cxf-xjc-plugin.version>3.0.5</cxf-xjc-plugin.version>
     <exec-maven-plugin.version>1.2.1</exec-maven-plugin.version>
     <findbugs-maven-plugin.version>2.5.2</findbugs-maven-plugin.version>
     <fitnesse-launcher-maven-plugin.version>1.4.1</fitnesse-launcher-maven-plugin.version>
