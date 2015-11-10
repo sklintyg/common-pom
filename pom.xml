@@ -50,18 +50,6 @@
     <logback.version>1.0.11</logback.version>
 
     <!-- Spring Framework -->
-<<<<<<< HEAD
-    <spring.version>3.2.8.RELEASE</spring.version>
-    <spring.batch.version>2.1.7.RELEASE</spring.batch.version>
-    <spring.batch.admin.version>1.2.2.RELEASE</spring.batch.admin.version>
-    <spring.data.version>1.4.1.RELEASE</spring.data.version>
-    <spring.integration.version>2.0.3.RELEASE</spring.integration.version>
-    <spring.security.version>3.2.5.RELEASE</spring.security.version>
-    <spring.security.extensions.version>1.0.1.RELEASE</spring.security.extensions.version>
-
-    <!-- Queue management -->
-    <activemq.version>5.8.0</activemq.version>
-=======
     <spring.version>4.2.2.RELEASE</spring.version>
     <spring.data.version>1.9.0.RELEASE</spring.data.version>
     <spring.security.version>4.0.3.RELEASE</spring.security.version>
@@ -69,7 +57,6 @@
 
     <!-- Queue management -->
     <activemq.version>5.9.1</activemq.version>
->>>>>>> release/v1.0.17
     <javax-jms-api.version>1.1-rev-1</javax-jms-api.version>
 
     <!-- Security -->
