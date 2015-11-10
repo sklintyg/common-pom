@@ -11,10 +11,6 @@
 
   <name>Intyg Common (POM)</name>
 
-  <modules>
-    <module>build-tools</module>
-  </modules>
-
   <properties>
     <dependency.unpack.skip>false</dependency.unpack.skip>
 
@@ -54,6 +50,7 @@
     <logback.version>1.0.11</logback.version>
 
     <!-- Spring Framework -->
+<<<<<<< HEAD
     <spring.version>3.2.8.RELEASE</spring.version>
     <spring.batch.version>2.1.7.RELEASE</spring.batch.version>
     <spring.batch.admin.version>1.2.2.RELEASE</spring.batch.admin.version>
@@ -64,6 +61,15 @@
 
     <!-- Queue management -->
     <activemq.version>5.8.0</activemq.version>
+=======
+    <spring.version>4.2.2.RELEASE</spring.version>
+    <spring.data.version>1.9.0.RELEASE</spring.data.version>
+    <spring.security.version>4.0.3.RELEASE</spring.security.version>
+    <spring.security.extensions.version>1.0.1.RELEASE</spring.security.extensions.version>
+
+    <!-- Queue management -->
+    <activemq.version>5.9.1</activemq.version>
+>>>>>>> release/v1.0.17
     <javax-jms-api.version>1.1-rev-1</javax-jms-api.version>
 
     <!-- Security -->
@@ -75,6 +81,7 @@
     <commons-io.version>2.4</commons-io.version>
     <commons-lang.version>2.6</commons-lang.version>
     <commons-lang3.version>3.1</commons-lang3.version>
+    <commons-codec.version>1.10</commons-codec.version>
     <guava.version>14.0.1</guava.version>
 
     <!-- Web/Webjars -->
@@ -85,13 +92,13 @@
     <bootstrap.version>3.1.1</bootstrap.version>
     <jstl.version>1.2</jstl.version>
     <momentjs.version>2.7.0</momentjs.version>
-    <node.version>v0.10.31</node.version>
-    <npm.version>1.4.23</npm.version>
+    <node.version>v0.12.4</node.version>
+    <npm.version>2.1.10</npm.version>
     <respond.version>1.4.2</respond.version>
     <servlet-api.version>2.5</servlet-api.version>
 
     <!-- Web Services -->
-    <cxf.version>2.7.13</cxf.version>
+    <cxf.version>3.1.3</cxf.version>
 
     <!-- XML -->
     <jaxb.commons.version>0.6.4</jaxb.commons.version>
@@ -104,7 +111,7 @@
     <lucene.version>4.10.2</lucene.version>
 
     <!-- Camel -->
-    <camel.version>2.13.3</camel.version>
+    <camel.version>2.16.0</camel.version>
 
     <!-- ehcache -->
     <ehcache.version>2.10.0</ehcache.version>
@@ -118,8 +125,8 @@
     <!-- Plugins and plugin dependencies -->
     <buildnumber-maven-plugin.version>1.2</buildnumber-maven-plugin.version>
     <cobertura-maven-plugin.version>2.5.2</cobertura-maven-plugin.version>
-    <cxf-codegen-plugin.version>2.7.5</cxf-codegen-plugin.version>
-    <cxf-xjc-plugin.version>2.6.0</cxf-xjc-plugin.version>
+    <cxf-codegen-plugin.version>3.1.3</cxf-codegen-plugin.version>
+    <cxf-xjc-plugin.version>3.0.5</cxf-xjc-plugin.version>
     <exec-maven-plugin.version>1.2.1</exec-maven-plugin.version>
     <findbugs-maven-plugin.version>2.5.2</findbugs-maven-plugin.version>
     <fitnesse-launcher-maven-plugin.version>1.4.1</fitnesse-launcher-maven-plugin.version>
@@ -193,12 +200,6 @@
 
   <dependencyManagement>
     <dependencies>
-
-      <dependency>
-        <groupId>se.inera.intyg.common</groupId>
-        <artifactId>common-build-tools</artifactId>
-        <version>0-SNAPSHOT</version>
-      </dependency>
 
       <!-- AOP -->
       <dependency>
@@ -487,6 +488,11 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>${commons-lang3.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>${commons-codec.version}</version>
       </dependency>
 
       <!-- Web/Webjars -->
@@ -1066,7 +1072,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
-          <argLine>-Dcatalina.base=${project.build.directory}/catalina.base</argLine>
+          <argLine>-Dcatalina.base=${project.build.directory}/catalina.base ${argLine}</argLine>
           <systemProperties>
             <property>
               <name>java.awt.headless</name>
@@ -1084,36 +1090,6 @@
         <artifactId>maven-scm-plugin</artifactId>
         <configuration>
           <tag>${project.artifactId}-${project.version}</tag>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>unpack-build-tools</id>
-            <phase>initialize</phase>
-            <goals>
-              <goal>unpack</goal>
-            </goals>
-            <configuration>
-              <skip>${dependency.unpack.skip}</skip>
-              <artifactItems>
-                <artifactItem>
-                  <groupId>se.inera.intyg.common</groupId>
-                  <artifactId>common-build-tools</artifactId>
-                </artifactItem>
-              </artifactItems>
-              <outputDirectory>${project.build.directory}/build-tools</outputDirectory>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <configuration>
-          <configLocation>${project.build.directory}/build-tools/checkstyle/checkstyle.xml</configLocation>
         </configuration>
       </plugin>
     </plugins>
@@ -1137,6 +1113,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
+        <version>${findbugs-maven-plugin.version}</version>
       </plugin>
     </plugins>
   </reporting>
