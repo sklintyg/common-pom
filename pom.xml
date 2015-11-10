@@ -79,8 +79,8 @@
     <bootstrap.version>3.1.1</bootstrap.version>
     <jstl.version>1.2</jstl.version>
     <momentjs.version>2.7.0</momentjs.version>
-    <node.version>v0.10.31</node.version>
-    <npm.version>1.4.23</npm.version>
+    <node.version>v0.12.4</node.version>
+    <npm.version>2.1.10</npm.version>
     <respond.version>1.4.2</respond.version>
     <servlet-api.version>2.5</servlet-api.version>
 
