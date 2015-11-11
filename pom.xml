@@ -73,9 +73,9 @@
 
     <!-- Web/Webjars -->
     <jquery.version>1.9.0</jquery.version>
-    <angularjs.version>1.2.27</angularjs.version>
-    <angular-ui-bootstrap.version>0.11.2</angular-ui-bootstrap.version>
-    <angular-ui-router.version>0.2.13</angular-ui-router.version>
+    <angularjs.version>1.4.7</angularjs.version>
+    <angular-ui-bootstrap.version>0.14.3</angular-ui-bootstrap.version>
+    <angular-ui-router.version>0.2.15</angular-ui-router.version>
     <bootstrap.version>3.1.1</bootstrap.version>
     <jstl.version>1.2</jstl.version>
     <momentjs.version>2.7.0</momentjs.version>
@@ -162,7 +162,7 @@
     <fitnesse.version>20131110</fitnesse.version>
     <junit.version>4.10</junit.version>
     <mockito-core.version>1.9.0</mockito-core.version>
-    <selenium.version>2.45.0</selenium.version>
+    <selenium.version>2.48.2</selenium.version>
     <springockito.version>1.0.8</springockito.version>
     <unitils-core.version>3.3</unitils-core.version>
     <xmlunit.version>1.4</xmlunit.version>
