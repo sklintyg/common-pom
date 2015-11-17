@@ -6,7 +6,7 @@
 
   <groupId>se.inera.intyg.common</groupId>
   <artifactId>common-pom</artifactId>
-  <version>1.0.18</version>
+  <version>0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Intyg Common (POM)</name>
@@ -15,8 +15,8 @@
     <dependency.unpack.skip>false</dependency.unpack.skip>
 
     <system.mode>dev</system.mode>
-    <compiler.target.version>1.7</compiler.target.version>
-    <compiler.source.version>1.7</compiler.source.version>
+    <compiler.target.version>1.8</compiler.target.version>
+    <compiler.source.version>1.8</compiler.source.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -88,7 +88,7 @@
     <cxf.version>3.1.3</cxf.version>
 
     <!-- XML -->
-    <jaxb.commons.version>0.6.4</jaxb.commons.version>
+    <jaxb.commons.version>0.9.5</jaxb.commons.version>
     <jackson.version>2.4.4</jackson.version>
     <xalan.version>2.7.1</xalan.version>
     <xml-apis.version>1.4.01</xml-apis.version>
@@ -105,7 +105,7 @@
 
     <!-- Uncategorized libraries -->
     <javax-mail.version>1.4</javax-mail.version>
-    <jetty.plugin.version>9.1.1.v20140108</jetty.plugin.version>
+    <jetty.plugin.version>9.3.6.v20151106</jetty.plugin.version>
     <geronimo-jms-specs.version>1.1.1</geronimo-jms-specs.version>
     <itext.version>5.3.2</itext.version>
 
@@ -490,11 +490,19 @@
         <scope>provided</scope>
       </dependency>
 
+      <!--
       <dependency>
         <groupId>jstl</groupId>
         <artifactId>jstl</artifactId>
         <version>${jstl.version}</version>
         <scope>provided</scope>
+      </dependency>
+      -->
+
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>apache-jstl</artifactId>
+        <version>${jetty.plugin.version}</version>
       </dependency>
 
       <dependency>
