@@ -212,7 +212,7 @@
         <version>${opensaml-xmltooling.version}</version>
       </dependency>
 
-      <!-- Database/Persistance -->
+      <!-- Database/Persistence -->
       <dependency>
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
