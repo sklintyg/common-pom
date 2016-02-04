@@ -1,4 +1,23 @@
 <?xml version="1.0"?>
+<!--
+  ~ Copyright (C) 2016 Inera AB (http://www.inera.se)
+  ~
+  ~ This file is part of sklintyg (https://github.com/sklintyg).
+  ~
+  ~ sklintyg is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ sklintyg is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
@@ -81,7 +100,6 @@
     <momentjs.version>2.7.0</momentjs.version>
     <node.version>v0.12.4</node.version>
     <npm.version>2.1.10</npm.version>
-    <respond.version>1.4.2</respond.version>
     <servlet-api.version>2.5</servlet-api.version>
 
     <!-- Web Services -->
@@ -93,6 +111,7 @@
     <xalan.version>2.7.1</xalan.version>
     <xml-apis.version>1.4.01</xml-apis.version>
     <json-path.version>1.2.0</json-path.version>
+    <Saxon-HE.version>9.6.0-4</Saxon-HE.version>
 
     <!-- Lucene -->
     <lucene.version>4.10.2</lucene.version>
@@ -601,6 +620,12 @@
         <groupId>xml-apis</groupId>
         <artifactId>xml-apis</artifactId>
         <version>${xml-apis.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>net.sf.saxon</groupId>
+        <artifactId>Saxon-HE</artifactId>
+        <version>${Saxon-HE.version}</version>
       </dependency>
 
       <dependency>
