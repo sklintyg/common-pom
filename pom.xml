@@ -89,6 +89,7 @@
     <commons-lang3.version>3.1</commons-lang3.version>
     <commons-codec.version>1.10</commons-codec.version>
     <guava.version>14.0.1</guava.version>
+    <stringtemplate.version>4.0.8</stringtemplate.version>
 
     <!-- Web/Webjars -->
     <jquery.version>1.9.0</jquery.version>
@@ -697,6 +698,12 @@
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>${guava.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.antlr</groupId>
+        <artifactId>ST4</artifactId>
+        <version>${stringtemplate.version}</version>
       </dependency>
 
       <dependency>
