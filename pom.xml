@@ -186,6 +186,7 @@
     <springockito.version>1.0.8</springockito.version>
     <unitils-core.version>3.3</unitils-core.version>
     <xmlunit.version>1.4</xmlunit.version>
+    <restassured.version>2.8.0</restassured.version>
   </properties>
 
   <scm>
@@ -814,13 +815,24 @@
         <artifactId>selenium-support</artifactId>
         <version>${selenium.version}</version>
       </dependency>
-
       <dependency>
         <groupId>xmlunit</groupId>
         <artifactId>xmlunit</artifactId>
         <version>${xmlunit.version}</version>
         <scope>test</scope>
       </dependency>
+      <dependency>
+        <groupId>com.jayway.restassured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>${restassured.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.jayway.restassured</groupId>
+        <artifactId>json-schema-validator</artifactId>
+        <version>${restassured.version}</version>
+        <scope>test</scope>
+      </dependency>    
     </dependencies>
   </dependencyManagement>
 
