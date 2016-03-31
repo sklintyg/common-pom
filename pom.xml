@@ -89,6 +89,7 @@
     <commons-lang3.version>3.1</commons-lang3.version>
     <commons-codec.version>1.10</commons-codec.version>
     <guava.version>14.0.1</guava.version>
+    <autovalue.version>1.1</autovalue.version>
     <stringtemplate.version>4.0.8</stringtemplate.version>
 
     <!-- Web/Webjars -->
@@ -700,6 +701,12 @@
         <artifactId>guava</artifactId>
         <version>${guava.version}</version>
       </dependency>
+      
+      <dependency>
+		<groupId>com.google.auto.value</groupId>
+		<artifactId>auto-value</artifactId>
+		<version>${autovalue.version}</version>
+	  </dependency>
 
       <dependency>
         <groupId>org.antlr</groupId>
