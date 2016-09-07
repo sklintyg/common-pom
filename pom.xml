@@ -25,7 +25,7 @@
 
   <groupId>se.inera.intyg.common</groupId>
   <artifactId>common-pom</artifactId>
-  <version>1.0.26</version>
+  <version>0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Intyg Common (POM)</name>
@@ -182,7 +182,7 @@
     <fitnesse.version>20131110</fitnesse.version>
     <junit.version>4.12</junit.version>
     <mockito-core.version>1.9.0</mockito-core.version>
-    <selenium.version>2.48.2</selenium.version>
+    <selenium.version>2.52.0</selenium.version>
     <springockito.version>1.0.8</springockito.version>
     <unitils-core.version>3.3</unitils-core.version>
     <xmlunit.version>1.4</xmlunit.version>
